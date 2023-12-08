@@ -98,7 +98,6 @@ for num in fixedNums:
 
     else:
         longNums.append(num)
-    
 
 
 for allStarIndexes in surroundingStar:
