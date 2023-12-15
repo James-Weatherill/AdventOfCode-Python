@@ -9,7 +9,7 @@ startTime = time()
 fixedList = []
 file1 = open("input.txt", "r")
 file2 = open("testInput.txt", "r")
-fileReadList = str(file1.readlines()).replace("\\n', '", ".").replace("..", "|").replace("['", "").replace("\\n']", "").replace(" map:", "").split("|")
+fileReadList = str(file2.readlines()).replace("\\n', '", ".").replace("..", "|").replace("['", "").replace("\\n']", "").replace(" map:", "").split("|")
 for string in fileReadList:
     fixedList.append(string.split("."))
 fixedList[0] = str(fixedList[0]).replace("['", "").replace("']", "").split(" ")
