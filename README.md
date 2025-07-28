@@ -4,7 +4,7 @@
 If I am doing Advent of Code in Python, then this is where you will find the code
 for it!
 
-Merry Christmas!!!🎄🎅❄️
+Merry Christmas!!! 🎄🎅❄️
 
 ## 🎄 Progress Tracker
 
