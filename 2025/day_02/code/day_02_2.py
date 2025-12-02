@@ -14,7 +14,7 @@ with open(path_name, "r") as file:
     IDs = file.read().split(",")
     IDs[-1] = IDs[-1].strip()
 
-IDs_split = [[int(first), int(last)] for first, last in [ID.split("-") for ID in IDs]]
+IDs_split = [(int(first), int(last)) for first, last in [ID.split("-") for ID in IDs]]
 
 invalid_sum = 0
 
@@ -30,7 +30,7 @@ for ID_first, ID_last in IDs_split:
 
                 chunk = ID_str[:current_chunk_length]
 
-                for chunk_index in range(1, (ID_str_len // current_chunk_length)):
+                for chunk_index in range(1, ID_str_len // current_chunk_length):
                     if ID_str[chunk_index * current_chunk_length : (chunk_index + 1) * current_chunk_length] != chunk:
                         repeat_found = False
                         break

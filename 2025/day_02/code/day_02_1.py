@@ -14,7 +14,7 @@ with open(path_name, "r") as file:
     IDs = file.read().split(",")
     IDs[-1] = IDs[-1].strip()
 
-IDs_split = [[int(first), int(last)] for first, last in [ID.split("-") for ID in IDs]]
+IDs_split = [(int(first), int(last)) for first, last in [ID.split("-") for ID in IDs]]
 
 invalid_sum = 0
 
